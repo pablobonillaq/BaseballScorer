@@ -1,0 +1,17 @@
+# Normaliza finales de línea (LF en el repositorio)
+* text=auto
+
+# Scripts de Windows con CRLF, scripts de Unix con LF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+gradlew text eol=lf
+*.sh text eol=lf
+
+# Binarios
+*.jar binary
+*.keystore binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ttf binary

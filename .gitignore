@@ -1,0 +1,94 @@
+# ============================================================
+#  BaseballScorer - React Native (Android)
+# ============================================================
+
+# --- Dependencias ---
+node_modules/
+.yarn/
+npm-debug.log*
+yarn-error.log*
+
+# --- APK generados por generar-apk.bat ---
+dist/
+*.apk
+*.aab
+*.apks
+*.hprof
+
+# --- Android / Gradle ---
+.gradle/
+.kotlin/
+build/
+android/app/.cxx/
+android/.cxx/
+android/local.properties
+android/app/release/
+android/captures/
+*.iml
+.externalNativeBuild/
+.cxx/
+.idea/
+
+# Llaves de firma: no subir llaves de release.
+# debug.keystore es la llave pública de depuración de React Native y sí se sube
+# (generar-apk.bat la usa para firmar).
+*.keystore
+!debug.keystore
+*.jks
+
+# --- iOS / Xcode ---
+ios/Pods/
+ios/build/
+**/xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+ios/.xcode.env.local
+**/.xcode.env.local
+/vendor/bundle/
+
+# --- Metro / React Native ---
+.metro-health-check*
+*.jsbundle
+*.bundle.map
+
+# --- Pruebas ---
+coverage/
+/coverage
+
+# --- Ruby / Bundler ---
+.bundle/vendor/
+
+# --- Variables de entorno ---
+.env
+.env.*
+!.env.example
+
+# --- Java (plantilla de GitHub) ---
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+# El wrapper de Gradle SÍ se necesita para compilar
+!android/gradle/wrapper/gradle-wrapper.jar
+
+# --- Sistema operativo / editores ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.swp
